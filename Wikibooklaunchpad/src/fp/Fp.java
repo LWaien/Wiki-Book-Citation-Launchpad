@@ -27,7 +27,7 @@ public class Fp {
             Elements hrefs = document.select("a.mw-redirect");
             for(Element e: hrefs.subList(1,hrefs.size())){
                 String links = e.attr("href");
-                //System.out.println("\n"+links+"---------------"+"\n");
+                
                 
                 
                 final String urlsubtopic = "https://en.wikipedia.org"+links;
@@ -36,15 +36,12 @@ public class Fp {
                         Elements references = document_2.getElementsByClass("citation book");                       
                         Elements refis = references.select("i");
                         String subgroup = links +"+"+refis;                      
-                        //System.out.println("TOPIC = "+links);
+                        
                         TNode parent = new TNode(links,rooted);
                         String subtops = parent.getElement();
                         System.out.println("--------------"+"\n"+"SUBTOPIC: "+subtops+"\n"+"- - - - - - - "+"\n"+"Citations: ");
                         parser.refs(subgroup,parent);
-                        //printer.printT(rooted);
-                        //System.out.println("test");
-                        // issue is how do I return "subgroup" to another 
-                        //class file within this for loop so I can generate nodes
+                        
                                 
                         
                     }
