@@ -1,1 +1,3 @@
-# WIki-Book-Citation-Launchpad
+# Wiki-Book-Citation-Launchpad
+
+This program is a webscraper(using JSoup) that scrapes the citation section of a given wiki url. Furthermore, it exclusively scrapes the book citations in an attempt to get more credible sources. Within the given wiki page, the same process is done on related wiki pages that are linked to the main one. This gives the user quick access to citations that relate both directly and indirectly to a given topic. For example, a search on wiki/math will also generate citations from wiki/algebra, /geometry etc... 
