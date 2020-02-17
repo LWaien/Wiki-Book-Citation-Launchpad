@@ -27,8 +27,7 @@ public class TNode<E> {
   public String getElement() {return element.toString();}
   public TNode<E> getParent() {return parent;}
   public void setParent(TNode<E> p) {parent = p;}
-  //public TNode<E> getChild() {return child;}
-  //public void setChild(TNode<E> c) {child = c;}
+  
 
   public String toString(){
     return element+" : "+element+"";
